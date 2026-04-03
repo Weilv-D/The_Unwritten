@@ -1,6 +1,6 @@
 ---
 name: capture-idea
-description: "灵感速记——快速记录闪念，自动分类归档。用法: /capture-idea 江既白在拍卖会上发现暗拍的东西是前世的古物"
+description: "触发: 当用户说 '灵感''想法''闪念''突然想到''记录' 时激活。快速记录闪念，自动分类归档。用法: /capture-idea [灵感内容]"
 ---
 
 # 灵感速记
@@ -45,4 +45,5 @@ description: "灵感速记——快速记录闪念，自动分类归档。用法
 ### 5. 确认
 告知作者灵感已记录到哪个文件。
 
-### [2026-04-03 13:52] Write: D:\\TheUnwritten\\.claude\\skills\\capture-idea\\SKILL.md
+
+### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\capture-idea\\SKILL.md

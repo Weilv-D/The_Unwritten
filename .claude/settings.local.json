@@ -1,11 +1,22 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/Deng2/.claude/**)",
-      "Read(//c/Users/Deng2/.claude/plugins/**)"
+      "Read(//c/Users/Deng2/.claude/**)"
     ]
   },
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-sensitive.sh\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "Write|Edit",
@@ -13,6 +24,11 @@
           {
             "type": "command",
             "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/log-change.sh\"",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/word-count-check.sh\"",
             "timeout": 5
           }
         ]

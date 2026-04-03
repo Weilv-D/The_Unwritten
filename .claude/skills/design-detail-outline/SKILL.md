@@ -1,6 +1,6 @@
 ---
 name: design-detail-outline
-description: "设计卷次细纲——从大纲展开到每章分配。用法: /design-detail-outline 卷1"
+description: "触发: 当用户说 '细纲''详细大纲''章节分配''展开大纲' 时激活。从大纲展开为逐章细纲。用法: /design-detail-outline 卷1"
 ---
 
 # 设计卷次细纲
@@ -65,4 +65,5 @@ description: "设计卷次细纲——从大纲展开到每章分配。用法: /
 - 细纲写入 `03_大纲/卷次/$ARGUMENTS_细纲.md`
 - 更新 `03_大纲/INDEX.md`
 
-### [2026-04-03 13:51] Write: D:\\TheUnwritten\\.claude\\skills\\design-detail-outline\\SKILL.md
+
+### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\design-detail-outline\\SKILL.md

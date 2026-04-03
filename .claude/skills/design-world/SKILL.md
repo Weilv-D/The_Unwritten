@@ -1,6 +1,6 @@
 ---
 name: design-world
-description: "世界观设计——涟漪展开法+冰山策略。用法: /design-world 势力 或 /design-world 地理"
+description: "触发: 当用户说 '世界观''设定''地理''势力''力量体系' 时激活。涟漪展开法+冰山策略。用法: /design-world 势力 或 /design-world 地理"
 ---
 
 # 世界观设计
@@ -57,4 +57,5 @@ description: "世界观设计——涟漪展开法+冰山策略。用法: /desig
 - 新设定必须包含"在故事中如何自然揭示"的建议
 - 命名遵循 A+B+C 三层结构，适当使用生僻字
 
-### [2026-04-03 13:52] Write: D:\\TheUnwritten\\.claude\\skills\\design-world\\SKILL.md
+
+### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\design-world\\SKILL.md
