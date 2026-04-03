@@ -33,7 +33,9 @@
 - **创建新人物**：参考 [TEMPLATES.md](TEMPLATES.md)
 - **查找人物出场**：查看 [00_appearance_tracker.md](00_appearance_tracker.md)
 - **查看人物关系**：查看 [00_relationship_map.md](00_relationship_map.md)
-- **检查人物一致性**：使用 [一致性检查提示词](../07_PROMPTS_AND_WORKFLOWS/01_prompt_templates/005_consistency_prompts.md)
+- **检查人物一致性**：使用 [一致性检查提示词](../07_提示词/一致性检查.md)
 
 ## 修改记录
 - 2026-04-02：创建索引文件
+
+### [2026-04-03 13:37] Edit: D:\\TheUnwritten\\02_人物\\INDEX.md

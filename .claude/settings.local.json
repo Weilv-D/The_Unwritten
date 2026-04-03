@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Deng2/.claude/**)",
+      "Read(//c/Users/Deng2/.claude/plugins/**)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/log-change.sh\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
