@@ -1,6 +1,6 @@
 ---
 name: check-consistency
-description: "一致性检查——人物/世界观/时间线/伏笔五维审查。用法: /check-consistency 卷1/ch003 或 /check-consistency 卷1"
+description: "触发: 当用户说 '一致性''矛盾''检查矛盾''时间线''伏笔检查' 时激活。五维一致性审查（人物/世界观/时间线/伏笔/物品）。用法: /check-consistency 卷1/ch003 或 /check-consistency 卷1"
 ---
 
 # 一致性检查
@@ -64,4 +64,5 @@ description: "一致性检查——人物/世界观/时间线/伏笔五维审查
 ### 4. 更新追踪文件
 如有新发现，更新 `06_追踪/伏笔追踪.md`。
 
-### [2026-04-03 13:49] Write: D:\\TheUnwritten\\.claude\\skills\\check-consistency\\SKILL.md
+
+### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\check-consistency\\SKILL.md

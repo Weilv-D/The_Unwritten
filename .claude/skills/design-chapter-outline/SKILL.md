@@ -1,6 +1,6 @@
 ---
 name: design-chapter-outline
-description: "设计章纲——从细纲生成单章写作蓝图。用法: /design-chapter-outline 卷1/ch003"
+description: "触发: 当用户说 '章纲''章节大纲''写作蓝图' 时激活。从细纲生成单章写作蓝图。用法: /design-chapter-outline 卷1/ch003"
 ---
 
 # 设计章纲
@@ -69,4 +69,5 @@ description: "设计章纲——从细纲生成单章写作蓝图。用法: /des
 ### 4. 输出
 章纲写入 `04_章纲/$ARGUMENTS.md`，请作者审阅确认。
 
-### [2026-04-03 13:51] Write: D:\\TheUnwritten\\.claude\\skills\\design-chapter-outline\\SKILL.md
+
+### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\design-chapter-outline\\SKILL.md

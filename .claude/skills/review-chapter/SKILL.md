@@ -1,6 +1,6 @@
 ---
 name: review-chapter
-description: "审阅章节质量——七维评估+12条规则复查。用法: /review-chapter 卷1/ch003"
+description: "触发: 当用户说 '审阅''审查''检查质量''review' 时激活。七维评估+12条规则复查。用法: /review-chapter 卷1/ch003"
 ---
 
 # 审阅章节
@@ -47,4 +47,5 @@ description: "审阅章节质量——七维评估+12条规则复查。用法: /
 ### 5. 询问
 询问作者是否需要根据报告修改。如需修改，直接定位到具体段落进行调整。
 
-### [2026-04-03 13:49] Write: D:\\TheUnwritten\\.claude\\skills\\review-chapter\\SKILL.md
+
+### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\review-chapter\\SKILL.md

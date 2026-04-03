@@ -1,6 +1,6 @@
 ---
 name: daily-start
-description: "每日创作启动——加载进度、确认目标、准备上下文。用法: /daily-start"
+description: "触发: 当用户说 '开始''开工''准备写作''今天写什么' 时激活。每日创作启动——自动加载进度、确认目标、准备上下文。用法: /daily-start"
 ---
 
 # 每日创作启动
@@ -38,4 +38,5 @@ description: "每日创作启动——加载进度、确认目标、准备上下
 ### 5. 就绪确认
 告知作者已加载的文件列表，准备开始工作。
 
-### [2026-04-03 13:48] Write: D:\\TheUnwritten\\.claude\\skills\\daily-start\\SKILL.md
+
+### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\daily-start\\SKILL.md
