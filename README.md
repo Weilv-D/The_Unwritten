@@ -22,7 +22,7 @@ TheUnwritten/
 ├── README.md               项目导航（本文件）
 ├── .claude/
 │   ├── rules/              分层规则文件（按路径自动激活）
-│   ├── commands/           自定义斜杠命令
+│   ├── skills/             自定义 Skills（渐进式加载）
 │   ├── hooks/              自动化 Hook 脚本
 │   └── settings.local.json Hooks 配置
 │
@@ -58,15 +58,20 @@ TheUnwritten/
 
 ---
 
-## 自定义命令
+## 自定义 Skills
 
 | 命令 | 用途 |
 |------|------|
 | `/daily-start` | 每日创作启动，自动加载上下文 |
+| `/design-world 势力` | 世界观设计（涟漪展开法） |
+| `/design-outline 卷1` | 设计卷次大纲（节拍器理论） |
+| `/design-detail-outline 卷1` | 设计卷次细纲（逐章分配） |
+| `/design-chapter-outline 卷1/ch003` | 设计单章章纲 |
 | `/write-chapter 卷1/ch003` | 按流程创作一章正文 |
 | `/review-chapter 卷1/ch003` | 审阅章节质量 |
 | `/check-consistency 卷1` | 一致性检查（单章或全卷） |
 | `/create-character 主角_姓名` | 创建新人物档案 |
+| `/capture-idea 灵感内容` | 灵感速记，自动分类归档 |
 
 ---
 
@@ -109,3 +114,7 @@ TheUnwritten/
 本项目内容版权归作者所有。未经授权，请勿转载或使用。
 
 ### [2026-04-03 13:33] Write: D:\\TheUnwritten\\README.md
+
+### [2026-04-03 13:56] Edit: D:\\TheUnwritten\\README.md
+
+### [2026-04-03 13:56] Edit: D:\\TheUnwritten\\README.md
