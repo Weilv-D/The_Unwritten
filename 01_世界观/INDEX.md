@@ -16,8 +16,8 @@
 | 经济系统 | [02_society/02_economy.md](02_society/02_economy.md) | 货币、贸易、资源 |
 | 法律制度 | [02_society/03_law.md](02_society/03_law.md) | 法律体系、执法机构 |
 | 社会阶层 | [02_society/04_social_classes.md](02_society/04_social_classes.md) | 阶层划分、社会流动 |
-| 魔法体系 | [03_power_system/01_magic_system.md](03_power_system/01_magic_system.md) | 力量来源、施法方式 |
-| 能力等级 | [03_power_system/02_power_levels.md](03_power_system/02_power_levels.md) | 等级划分、进阶条件 |
+| 魔法体系 | [03_power_system/01_magic_system.md](03_power_system/01_magic_system.md) | 性命二元论、三魂七魄、四大修行体系、核心概念 |
+| 能力等级 | [03_power_system/02_power_levels.md](03_power_system/02_power_levels.md) | 境界总纲、修行流程、时间参考 |
 | 限制代价 | [03_power_system/03_limitations.md](03_power_system/03_limitations.md) | 力量限制、使用代价 |
 | 特殊能力 | [03_power_system/04_special_abilities.md](03_power_system/04_special_abilities.md) | 独特能力、禁忌之术 |
 | 宗教信仰 | [04_culture/01_religion.md](04_culture/01_religion.md) | 神祇体系、信仰结构 |
@@ -38,10 +38,10 @@
 |------|--------|--------|--------|
 | 基础设定 | 0/4 | 0/4 | 4 |
 | 社会结构 | 0/4 | 0/4 | 4 |
-| 力量体系 | 0/4 | 0/4 | 4 |
+| 力量体系 | 2/4 | 2/4 | 2 |
 | 文化宗教 | 0/4 | 0/4 | 4 |
 | 历史背景 | 0/4 | 0/4 | 4 |
 | 种族生物 | 0/3 | 0/3 | 3 |
 
 ## 修改记录
-- 2026-04-02：创建索引文件
+- 2026-04-02：录入修炼体系设定（四大修行体系、核心概念、境界等级、修行流程）
