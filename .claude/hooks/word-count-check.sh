@@ -11,10 +11,10 @@ if [[ "$FILE_PATH" == *05_正文* ]] && [[ -f "$FILE_PATH" ]]; then
   # 统计中文字符数（排除ASCII、空白、中英文标点、Markdown符号后计数）
   CHAR_COUNT=$(cat "$FILE_PATH" | sed 's/[[:space:]]//g; s/[[:punct:]]//g; s/[a-zA-Z0-9]//g; s/[，。！？、；：""''（）《》【】『』「」—…·]//g' | tr -d '\n\r' | wc -m)
 
-  if [[ $CHAR_COUNT -lt 5500 ]]; then
-    echo "WARNING: 字数不足！当前约 ${CHAR_COUNT} 字，目标 6000 字（最低 5500）" >&2
-  elif [[ $CHAR_COUNT -gt 6500 ]]; then
-    echo "WARNING: 字数超标！当前约 ${CHAR_COUNT} 字，目标 6000 字（最高 6500）" >&2
+  if [[ $CHAR_COUNT -lt 6500 ]]; then
+    echo "WARNING: 字数不足！当前约 ${CHAR_COUNT} 字，目标 7500 字（最低 6500）" >&2
+  elif [[ $CHAR_COUNT -gt 8500 ]]; then
+    echo "WARNING: 字数超标！当前约 ${CHAR_COUNT} 字，目标 7500 字（最高 8500）" >&2
   fi
 fi
 
