@@ -95,7 +95,7 @@ TheUnwritten/
 - **远程仓库**：https://github.com/Weilv-D/The_Unwritten.git
 - **提交规范**：
   ```
-  feat(vol1/ch001): 完成第001章初稿（6000字）
+  feat(vol1/ch001): 完成第001章初稿（7500字）
   fix(世界观): 修正力量体系等级描述不一致
   docs(人物): 新增主角_姓名角色档案
   review(vol1): 完成第一卷一致性审查
