@@ -46,4 +46,3 @@ description: "触发: 当用户说 '灵感''想法''闪念''突然想到''记录
 告知作者灵感已记录到哪个文件。
 
 
-### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\capture-idea\\SKILL.md

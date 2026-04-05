@@ -5,7 +5,6 @@
 
 INPUT=$(cat)
 FILE_PATH=$(echo "$INPUT" | grep -o '"file_path":"[^"]*"' | head -1 | cut -d'"' -f4)
-TOOL_INPUT=$(echo "$INPUT" | grep -o '"tool_input":{[^}]*}"')
 
 # 阻断：编辑 settings.local.json
 if [[ "$FILE_PATH" == *".claude/settings.local.json"* ]]; then

@@ -48,4 +48,3 @@ description: "触发: 当用户说 '审阅''审查''检查质量''review' 时激
 询问作者是否需要根据报告修改。如需修改，直接定位到具体段落进行调整。
 
 
-### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\review-chapter\\SKILL.md
