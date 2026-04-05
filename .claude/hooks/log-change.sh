@@ -19,7 +19,8 @@ if [[ "$FILE_PATH" == "$PROJECT_ROOT"* ]] && [[ "$FILE_PATH" != *.git/* ]]; then
      [[ "$FILE_PATH" == */03_大纲/* ]] || \
      [[ "$FILE_PATH" == */01_世界观/* ]] || \
      [[ "$FILE_PATH" == */02_人物/* ]] || \
-     [[ "$FILE_PATH" == */06_追踪/* ]]; then
+     [[ "$FILE_PATH" == */06_追踪/* ]] || \
+     [[ "$FILE_PATH" == */08_灵感/* ]]; then
     RELATIVE="${FILE_PATH#$PROJECT_ROOT/}"
     LOG_PATH="$PROJECT_ROOT/06_追踪/创作日志.md"
 

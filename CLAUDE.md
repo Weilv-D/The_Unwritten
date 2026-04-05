@@ -68,10 +68,9 @@
 | 详细写作风格 | `.claude/rules/writing-style.md` |
 | 12条禁止规则 | `.claude/rules/forbidden-rules.md` |
 | 创作哲学 | `.claude/rules/creative-philosophy.md` |
-| 创作方法论·总纲 | `.claude/rules/writing-methodology.md` |
-| 设定构建方法论 | `.claude/rules/methodology-world.md` |
-| 剧情规划方法论 | `.claude/rules/methodology-plot.md` |
-| 写作技法方法论 | `.claude/rules/methodology-writing.md` |
+| 设定构建方法论 | `.claude/rules/methodology-world.md`（paths 自动激活） |
+| 剧情规划方法论 | `.claude/rules/methodology-plot.md`（paths 自动激活） |
+| 写作技法方法论 | `.claude/rules/methodology-writing.md`（paths 自动激活） |
 | 文件命名/Git规范 | `.claude/rules/file-conventions.md` |
 | 世界观设定 | `01_世界观/INDEX.md` |
 | 人物速查 | `02_人物/人物速查.md` |
@@ -91,3 +90,4 @@
 - 不在未读上下文时做假设
 - 不违反12条禁止规则
 - 不擅自做创作决策（必须先问人类）
+- 不读取与当前任务无关的文件（每读一个文件前评估必要性）

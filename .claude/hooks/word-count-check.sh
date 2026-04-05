@@ -13,8 +13,8 @@ if [[ "$FILE_PATH" == *05_正文* ]] && [[ -f "$FILE_PATH" ]]; then
 
   if [[ $CHAR_COUNT -lt 5500 ]]; then
     echo "WARNING: 字数不足！当前约 ${CHAR_COUNT} 字，目标 6000 字（最低 5500）" >&2
-  elif [[ $CHAR_COUNT -gt 8000 ]]; then
-    echo "WARNING: 字数超标！当前约 ${CHAR_COUNT} 字，目标 6000 字（最高 8000）" >&2
+  elif [[ $CHAR_COUNT -gt 6500 ]]; then
+    echo "WARNING: 字数超标！当前约 ${CHAR_COUNT} 字，目标 6000 字（最高 6500）" >&2
   fi
 fi
 
