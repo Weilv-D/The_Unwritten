@@ -58,4 +58,3 @@ description: "触发: 当用户说 '世界观''设定''地理''势力''力量体
 - 命名遵循 A+B+C 三层结构，适当使用生僻字
 
 
-### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\design-world\\SKILL.md

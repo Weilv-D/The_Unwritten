@@ -65,4 +65,3 @@ description: "触发: 当用户说 '一致性''矛盾''检查矛盾''时间线''
 如有新发现，更新 `06_追踪/伏笔追踪.md`。
 
 
-### [2026-04-03 14:52] Edit: D:\\TheUnwritten\\.claude\\skills\\check-consistency\\SKILL.md
