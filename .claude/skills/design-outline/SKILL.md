@@ -18,7 +18,7 @@ description: "触发: 当用户说 '大纲''卷次大纲''粗纲''设计大纲' 
 - `01_世界观/INDEX.md` 及已有世界观文件
 - `02_人物/人物速查.md`
 - 已有卷大纲（如果是后续卷）
-- **必读规则**：`outline-rules.md`、`creative-philosophy.md`、`writing-methodology.md`
+- **必读规则**：`outline-rules.md`、`creative-philosophy.md`、`methodology-plot.md`
 
 ### 2. 确认本卷定位
 
@@ -69,4 +69,9 @@ description: "触发: 当用户说 '大纲''卷次大纲''粗纲''设计大纲' 
 - 完整大纲写入 `03_大纲/卷次/$ARGUMENTS_大纲.md`
 - 更新 `03_大纲/INDEX.md`
 - 更新 `06_追踪/伏笔追踪.md`
+
+## 错误处理
+- **与故事梗概矛盾**：停止并报告，请作者决策
+- **世界观设定缺失**：标记缺失项，建议先运行 `/design-world`
+- **序列设计无法覆盖关键情节**：标记缺口，与作者讨论调整
 
