@@ -18,7 +18,7 @@ description: "触发: 当用户说 '大纲''卷次大纲''粗纲''设计大纲' 
 - `01_世界观/INDEX.md` 及已有世界观文件
 - `02_人物/人物速查.md`
 - 已有卷大纲（如果是后续卷）
-- `.claude/rules/creative-philosophy.md`
+- **必读规则**：`outline-rules.md`、`creative-philosophy.md`、`writing-methodology.md`
 
 ### 2. 确认本卷定位
 

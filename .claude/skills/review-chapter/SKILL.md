@@ -16,7 +16,7 @@ description: "触发: 当用户说 '审阅''审查''检查质量''review' 时激
 - `05_正文/$ARGUMENTS.md`
 - `04_章纲/$ARGUMENTS.md`
 - 视角人物档案（`02_人物/人物速查.md`）
-- `.claude/rules/forbidden-rules.md`
+- **必读规则**：`writing-style.md`、`forbidden-rules.md`、`writing-methodology.md`
 
 ### 2. 七维评估（每项1-10分）
 
