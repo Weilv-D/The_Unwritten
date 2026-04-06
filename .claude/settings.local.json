@@ -1,7 +1,20 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/Deng2/.claude/**)"
+      "Read(//c/Users/Deng2/.claude/**)",
+      "mcp__dashscope-websearch__bailian_web_search",
+      "mcp__neo4j-memory__create_entities",
+      "mcp__neo4j-memory__create_relations",
+      "mcp__neo4j-memory__add_observations",
+      "mcp__neo4j-memory__search_nodes",
+      "mcp__neo4j-memory__open_nodes",
+      "mcp__neo4j-memory__read_graph",
+      "mcp__neo4j-memory__delete_entities",
+      "mcp__neo4j-memory__delete_relations",
+      "mcp__neo4j-memory__delete_observations",
+      "mcp__neo4j-cypher__get-schema",
+      "mcp__neo4j-cypher__read-query",
+      "mcp__neo4j-cypher__write-query"
     ]
   },
   "hooks": {
