@@ -72,6 +72,9 @@
 | 设定构建方法论   | `.claude/rules/methodology-world.md`（paths 自动激活）   |
 | 剧情规划方法论   | `.claude/rules/methodology-plot.md`（paths 自动激活）    |
 | 写作技法方法论   | `.claude/rules/methodology-writing.md`（paths 自动激活） |
+| 场景剧情模板     | `.claude/rules/methodology-templates.md`（paths 自动激活）|
+| 角色塑造方法论   | `.claude/rules/methodology-character.md`（paths 自动激活）|
+| 创作流程方法论   | `.claude/rules/methodology-workflow.md`（技能引用激活）   |
 | 文件命名/Git规范 | `.claude/rules/file-conventions.md`                      |
 | 世界观设定       | `01_世界观/INDEX.md`                                     |
 | 人物速查         | `02_人物/人物速查.md`                                    |

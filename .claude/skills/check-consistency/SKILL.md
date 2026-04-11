@@ -12,7 +12,7 @@ description: "触发: 当用户说 '一致性''矛盾''检查矛盾''时间线''
 
 ## 执行流程
 
-**必读规则**：`character-rules.md`、`worldbuilding-rules.md`
+**必读规则**：`character-rules.md`、`worldbuilding-rules.md`、`methodology-character.md`
 
 ### 1. 确定范围
 - 单章：仅检查该章
