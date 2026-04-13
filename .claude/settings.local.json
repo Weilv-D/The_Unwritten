@@ -14,7 +14,8 @@
       "mcp__neo4j-memory__delete_observations",
       "mcp__neo4j-cypher__get-schema",
       "mcp__neo4j-cypher__read-query",
-      "mcp__neo4j-cypher__write-query"
+      "mcp__neo4j-cypher__write-query",
+      "Bash(chmod 600:*)"
     ]
   },
   "hooks": {
