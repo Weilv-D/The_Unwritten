@@ -3,16 +3,23 @@
 # 由 PostToolUse hook 自动调用
 # stdin 接收 JSON: {"tool_name":"...","tool_input":{...},"transcript_path":"..."}
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/path-utils.sh"
+
 INPUT=$(cat)
-FILE_PATH=$(echo "$INPUT" | grep -o '"file_path":"[^"]*"' | head -1 | cut -d'"' -f4)
-TOOL=$(echo "$INPUT" | grep -o '"tool_name":"[^"]*"' | head -1 | cut -d'"' -f4)
+RAW_FILE_PATH=$(extract_json_field "$INPUT" '.tool_input.file_path')
+FILE_PATH=$(normalize_hook_path "$RAW_FILE_PATH")
+TOOL=$(extract_json_field "$INPUT" '.tool_name')
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M")
 
 # 获取项目根目录（优先使用环境变量，兼容路径变更）
-PROJECT_ROOT="${CLAUDE_PROJECT_DIR:-$(echo "$FILE_PATH" | sed -E 's|/(0[0-8]_[^/]*/.*)||')}"
+PROJECT_ROOT=$(normalize_hook_path "${CLAUDE_PROJECT_DIR:-}")
+if [[ -z "$PROJECT_ROOT" ]]; then
+  PROJECT_ROOT=$(derive_project_root "$FILE_PATH")
+fi
 
 # 只记录创作相关目录下的文件
-if [[ "$FILE_PATH" == "$PROJECT_ROOT"* ]] && [[ "$FILE_PATH" != *.git/* ]]; then
+if [[ -n "$FILE_PATH" ]] && [[ -n "$PROJECT_ROOT" ]] && [[ "$FILE_PATH" == "$PROJECT_ROOT"* ]] && [[ "$FILE_PATH" != */.git/* ]]; then
   # 过滤：只记录创作内容目录
   if [[ "$FILE_PATH" == */05_正文/* ]] || \
      [[ "$FILE_PATH" == */04_章纲/* ]] || \

@@ -3,11 +3,15 @@
 # 由 PostToolUse hook 自动调用
 # 仅对 05_正文/ 目录下的文件生效
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/path-utils.sh"
+
 INPUT=$(cat)
-FILE_PATH=$(echo "$INPUT" | grep -o '"file_path":"[^"]*"' | head -1 | cut -d'"' -f4)
+RAW_FILE_PATH=$(extract_json_field "$INPUT" '.tool_input.file_path')
+FILE_PATH=$(normalize_hook_path "$RAW_FILE_PATH")
 
 # 只检查正文目录
-if [[ "$FILE_PATH" == *05_正文* ]] && [[ -f "$FILE_PATH" ]]; then
+if [[ "$FILE_PATH" == */05_正文/* ]] && [[ -f "$FILE_PATH" ]]; then
   # 统计中文字符数（排除ASCII、空白、中英文标点、Markdown符号后计数）
   CHAR_COUNT=$(cat "$FILE_PATH" | sed 's/[[:space:]]//g; s/[[:punct:]]//g; s/[a-zA-Z0-9]//g; s/[，。！？、；：""''（）《》【】『』「」—…·]//g' | tr -d '\n\r' | wc -m)
 

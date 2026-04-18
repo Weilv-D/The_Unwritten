@@ -71,7 +71,11 @@ $forbiddenStrings = @(
     '04_power_system',
     '04_history',
     '05_factions',
-    '06_概念设计'
+    '06_概念设计',
+    'mcp__neo4j-memory__',
+    'mcp__neo4j-cypher__get-schema',
+    'mcp__neo4j-cypher__read-query',
+    'mcp__neo4j-cypher__write-query'
 )
 
 foreach ($text in $forbiddenStrings) {

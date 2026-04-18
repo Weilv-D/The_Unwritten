@@ -56,13 +56,13 @@ disable-model-invocation: true
 
 ### 3. 写入 Neo4j
 
-使用 MCP 工具 `mcp__neo4j-cypher__write-query` 按顺序写入：
+使用 MCP 工具 `mcp__neo4j-cypher__write_neo4j_cypher` 按顺序写入：
 1. **创建节点**：批量 CREATE
 2. **添加属性**：SET 补充属性
 3. **创建关系**：批量 MERGE 连接
 
 ### 4. 验证与报告
-- 用 `mcp__neo4j-cypher__read-query` 读取当前图谱统计
+- 用 `mcp__neo4j-cypher__read_neo4j_cypher` 读取当前图谱统计
 - 向用户报告同步结果：
   - 新增节点数（按类型）
   - 新增关系数（按类型）
