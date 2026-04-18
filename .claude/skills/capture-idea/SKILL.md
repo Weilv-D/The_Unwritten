@@ -1,6 +1,8 @@
----
+﻿---
 name: capture-idea
-description: "触发: 当用户说 '灵感''想法''闪念''突然想到''记录' 或直接说出创意内容时激活。快速记录灵感碎片，自动分类归档。用法: /capture-idea [灵感内容]"
+description: 记录并归档写作灵感，按内容分流到灵感库或相关资料文件。用于手动保存突发想法。
+argument-hint: "[灵感内容]"
+disable-model-invocation: true
 ---
 
 # 捕捉灵感
@@ -30,3 +32,4 @@ description: "触发: 当用户说 '灵感''想法''闪念''突然想到''记录
 - 写入对应分类文件
 - 更新 `08_灵感/INDEX.md`
 - 向作者确认归类是否正确
+

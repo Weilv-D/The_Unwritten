@@ -1,6 +1,7 @@
----
+﻿---
 name: init-project
-description: "触发: 当用户说 '初始化''初始化项目''reset''重置项目''重置工作区' 时激活。幂等检查并创建所有缺失的基础设施文件。用法: /init-project"
+description: 检查并补齐创作工作台的基础文件与目录。用于手动初始化或修复仓库基础设施。
+disable-model-invocation: true
 ---
 
 # 初始化项目
@@ -62,3 +63,4 @@ description: "触发: 当用户说 '初始化''初始化项目''reset''重置项
 ### 5. 验证与提交
 - 确认所有文件已创建
 - 建议提交 Git
+

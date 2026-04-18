@@ -1,6 +1,8 @@
----
+﻿---
 name: design-world
-description: "触发: 当用户说 '世界观''设定''地理''势力''力量体系' 时激活。洋葱层展开法+冰山策略。用法: /design-world 势力 或 /design-world 地理"
+description: 设计或扩展世界观模块，补充设定并校验与现有资料的一致性。用于手动扩展设定。
+argument-hint: "[主题]"
+disable-model-invocation: true
 ---
 
 # 设计世界观
@@ -47,3 +49,4 @@ description: "触发: 当用户说 '世界观''设定''地理''势力''力量体
 ### 6. 输出
 - 写入 `01_世界观/` 对应子目录
 - 更新 `01_世界观/INDEX.md`
+

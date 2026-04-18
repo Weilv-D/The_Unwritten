@@ -1,6 +1,8 @@
----
+﻿---
 name: review-chapter
-description: "触发: 当用户说 '审阅''审查''检查质量''review' 时激活。七维评估+14条规则复查。用法: /review-chapter 卷1/ch003"
+description: 审查单章质量，检查结构、文风、角色与伏笔执行情况。用于手动评审章节。
+argument-hint: "[卷X/chNNN]"
+disable-model-invocation: true
 ---
 
 # 审查章节
@@ -70,3 +72,4 @@ description: "触发: 当用户说 '审阅''审查''检查质量''review' 时激
 
 ### 5. 询问
 询问作者是否需要根据报告修改。如需要，可运行 `/edit-chapter`。
+

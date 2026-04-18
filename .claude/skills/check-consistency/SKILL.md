@@ -1,6 +1,8 @@
----
+﻿---
 name: check-consistency
-description: "触发: 当用户说 '一致性''冲突''检查矛盾''时间线''伏笔检查' 时激活。五维一致性审查（人物/世界观/时间线/伏笔/物品）。用法: /check-consistency 卷1/ch003 或 /check-consistency 卷1"
+description: 检查指定章节、卷次或资料范围的角色、设定、时间线与伏笔一致性。用于手动执行系统审查。
+argument-hint: "[卷次或章节]"
+disable-model-invocation: true
 ---
 
 # 一致性检查
@@ -68,3 +70,4 @@ description: "触发: 当用户说 '一致性''冲突''检查矛盾''时间线''
 
 ### 4. 更新追踪
 如发现新的伏笔问题，更新 `06_追踪/伏笔追踪.md`。
+
