@@ -11,7 +11,7 @@ disable-model-invocation: true
 
 ## 必读规则
 - `core-plot.md`（三幕推进法则、场景引擎）
-- `core-style.md`（14条禁忌红线）
+- `core-style.md`（FAIL级硬规则、重点改进项）
 
 ## 输入参数
 卷次：$ARGUMENTS（如 卷1）
@@ -32,6 +32,8 @@ disable-model-invocation: true
 抽样4个关键章节（开场、转折、高潮、结局）按 `/review-chapter` 标准执行质量评审。
 
 ### 阶段4：输出综合报告
+
+将报告写入：`06_追踪/审查报告/卷X_卷次审查.md`
 
 ```
 ## 卷次审查报告

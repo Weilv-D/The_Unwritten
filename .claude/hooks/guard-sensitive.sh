@@ -12,7 +12,7 @@ FILE_PATH=$(normalize_hook_path "$RAW_FILE_PATH")
 
 # 阻断：编辑 settings.local.json
 if [[ "$FILE_PATH" == */.claude/settings.local.json ]]; then
-  echo "BLOCKED: 不允许直接编辑 settings.local.json。如需修改 hooks 配置，请使用 /update-config 或手动编辑。" >&2
+  echo "BLOCKED: 不允许直接编辑 settings.local.json。如需修改 hooks 配置，请手动编辑后重启会话或重新加载配置快照。" >&2
   exit 2
 fi
 

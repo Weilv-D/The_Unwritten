@@ -34,6 +34,9 @@ if [[ -n "$FILE_PATH" ]] && [[ -n "$PROJECT_ROOT" ]] && [[ "$FILE_PATH" == "$PRO
     if [[ -f "$LOG_PATH" ]]; then
       echo "" >> "$LOG_PATH"
       echo "### [$TIMESTAMP] $TOOL: $RELATIVE" >> "$LOG_PATH"
+      echo "- 动作类型：$TOOL" >> "$LOG_PATH"
+      echo "- 相对路径：$RELATIVE" >> "$LOG_PATH"
+      echo "- 备注：hook 自动记录，仅供会话回顾辅助" >> "$LOG_PATH"
     fi
   fi
 fi

@@ -10,7 +10,7 @@ disable-model-invocation: true
 根据反馈或审查报告修改已有章节正文。
 
 ## 必读规则
-- `core-style.md`（14条禁忌红线、文风锚定）
+- `core-style.md`（FAIL级硬规则、重点改进项、文风锚定）
 
 ## 输入参数
 章节编号：$ARGUMENTS（格式：卷1/ch003）
@@ -36,8 +36,9 @@ disable-model-invocation: true
 - 修改后的段落与上下文自然衔接
 
 ### 4. 自检
-按 `core-style.md` 的14条禁忌红线逐条检查修改部分：
-- 每条标注 PASS/FAIL
+按 `core-style.md` 检查修改部分：
+- FAIL级硬规则逐条标注 PASS/FAIL
+- 重点改进项只标注“已改善 / 仍待优化”
 - FAIL 项标注具体位置和修改建议
 
 ### 5. 输出

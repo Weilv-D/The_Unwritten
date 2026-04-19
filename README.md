@@ -19,7 +19,7 @@
 | 模块 | 状态 | 说明 |
 |------|------|------|
 | 世界观 | 已建档 | 七大模块完整：地理、三玄、修行、力量体系、历史、势力、概念设计 |
-| 人物 | 待启动 | — |
+| 人物 | 基础建档 | 已有基础角色档案，作品级主角与核心关系待锁定 |
 | 大纲 | 待启动 | — |
 | 章纲 | 待启动 | — |
 | 正文 | 待启动 | — |
@@ -93,8 +93,8 @@ TheUnwritten/
 |------|------|
 | 项目运行时约束 | `CLAUDE.md` |
 | 人类维护手册 | `00_项目基础/使用指导书.md` |
-| 方法论权威源 | `00_项目基础/统一方法论与工作流指导.md` |
-| 文风与 14 条禁忌红线 | `.claude/rules/core-style.md` |
+| 方法论权威源（硬规则 / 默认模板 / 参考技法） | `00_项目基础/统一方法论与工作流指导.md` |
+| 文风分层、FAIL级硬规则与深审项 | `.claude/rules/core-style.md` |
 | 世界观方法与术语规范 | `.claude/rules/core-world.md` |
 | 角色方法 | `.claude/rules/core-character.md` |
 | 剧情与结构方法 | `.claude/rules/core-plot.md` |
@@ -135,12 +135,13 @@ TheUnwritten/
 | `.claude/settings.local.json` | hooks 与权限配置（版本控制特例） |
 
 > `settings.local.json` 被版本控制是项目历史特例，不代表 Claude Code 官方推荐方式。
+> 规则分层、默认模板与质量标准只在 `00_项目基础/统一方法论与工作流指导.md` 中定义；其余入口文档只做导航，不重复展开。
 
 ---
 
 ## 审计
 
-结构变更或批量修改后运行：
+结构变更、批量修改或 workflow 调整后运行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\audit-structure.ps1

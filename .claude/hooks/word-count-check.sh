@@ -16,9 +16,9 @@ if [[ "$FILE_PATH" == */05_正文/* ]] && [[ -f "$FILE_PATH" ]]; then
   CHAR_COUNT=$(cat "$FILE_PATH" | sed 's/[[:space:]]//g; s/[[:punct:]]//g; s/[a-zA-Z0-9]//g; s/[，。！？、；：""''（）《》【】『』「」—…·]//g' | tr -d '\n\r' | wc -m)
 
   if [[ $CHAR_COUNT -lt 6500 ]]; then
-    echo "WARNING: 字数不足！当前约 ${CHAR_COUNT} 字，目标 7500 字（最低 6500）" >&2
+    echo "WARNING: 当前约 ${CHAR_COUNT} 字，低于默认参考范围。默认目标为 7500 字，常用参考区间为 6500-8500；如偏离，请在交付时说明原因。" >&2
   elif [[ $CHAR_COUNT -gt 8500 ]]; then
-    echo "WARNING: 字数超标！当前约 ${CHAR_COUNT} 字，目标 7500 字（最高 8500）" >&2
+    echo "WARNING: 当前约 ${CHAR_COUNT} 字，高于默认参考范围。默认目标为 7500 字，常用参考区间为 6500-8500；如偏离，请在交付时说明原因。" >&2
   fi
 fi
 
