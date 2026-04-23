@@ -23,9 +23,11 @@ function Check-ForbiddenMatches {
         [string]$Message
     )
 
-    $matches = & rg --no-heading --line-number --fixed-strings --glob '!scripts/audit-structure.ps1' $Pattern . 2>$null
-    if ($LASTEXITCODE -eq 0 -and $matches) {
-        Add-Failure "$Message`n$matches"
+    $matches = Get-ChildItem -Path . -Recurse -File -Exclude 'audit-structure.ps1' |
+        Select-String -Pattern $Pattern -SimpleMatch -ErrorAction SilentlyContinue
+    if ($matches) {
+        $lines = $matches | ForEach-Object { "$($_.Path):$($_.LineNumber):$($_.Line)" }
+        Add-Failure "$Message`n$($lines -join "`n")"
     }
 }
 
@@ -36,8 +38,8 @@ function Check-Contains {
         [string]$Message
     )
 
-    $matches = & rg --no-heading --line-number --fixed-strings $Pattern $Path 2>$null
-    if ($LASTEXITCODE -ne 0 -or -not $matches) {
+    $matches = Select-String -Path $Path -Pattern $Pattern -SimpleMatch -ErrorAction SilentlyContinue
+    if (-not $matches) {
         Add-Failure $Message
     }
 }
@@ -49,9 +51,10 @@ function Check-NotContains {
         [string]$Message
     )
 
-    $matches = & rg --no-heading --line-number --fixed-strings $Pattern $Path 2>$null
-    if ($LASTEXITCODE -eq 0 -and $matches) {
-        Add-Failure "$Message`n$matches"
+    $matches = Select-String -Path $Path -Pattern $Pattern -SimpleMatch -ErrorAction SilentlyContinue
+    if ($matches) {
+        $lines = $matches | ForEach-Object { "$($_.Path):$($_.LineNumber):$($_.Line)" }
+        Add-Failure "$Message`n$($lines -join "`n")"
     }
 }
 
@@ -89,13 +92,13 @@ $referenceFiles = @(
 )
 
 $commandFiles = $referenceFiles + (Get-ChildItem '.claude/skills' -Recurse -Filter 'SKILL.md' | ForEach-Object { $_.FullName })
-$rawCommands = & rg --no-filename --only-matching --pcre2 '(?<=`)/[a-z]+(?:-[a-z]+)+(?=`)' $commandFiles 2>$null
+$rawMatches = $commandFiles | Select-String -Pattern '(?<=`)/[a-z]+(?:-[a-z]+)+(?=`)' -AllMatches -ErrorAction SilentlyContinue
 $commandAllowList = @('hooks', 'skill-name')
 $commands = @()
 
-if ($LASTEXITCODE -eq 0 -and $rawCommands) {
-    $commands = $rawCommands |
-        ForEach-Object { $_.Trim() } |
+if ($rawMatches) {
+    $commands = $rawMatches.Matches |
+        ForEach-Object { $_.Value.Trim() } |
         Where-Object { $_ } |
         Sort-Object -Unique
 }
@@ -140,7 +143,7 @@ foreach ($text in $forbiddenStrings) {
 }
 
 # 工作流契约检查
-Check-NotContains '.claude/hooks/guard-sensitive.sh' '/update-config' 'guard-sensitive.sh 仍引用不存在的 /update-config'
+Check-NotContains '.claude/hooks/Guard-Sensitive.ps1' '/update-config' 'Guard-Sensitive.ps1 仍引用不存在的 /update-config'
 
 Check-NotContains '.claude/skills/daily-start/SKILL.md' '3,000,000' 'daily-start 仍硬编码总目标字数'
 Check-NotContains '.claude/skills/daily-start/SKILL.md' 'X/100' 'daily-start 仍硬编码章节总数'

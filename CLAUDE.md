@@ -26,7 +26,10 @@
 - 方法论总纲将要求分为“硬规则 / 默认模板 / 参考技法”三层；执行时先保硬规则，再按模板推进，最后做风格拔高
 - `.claude/rules/` 承载常驻或按路径加载的规则
 - `.claude/skills/` 是项目唯一自定义命令入口
-- 除 `wenyan-writing` 外，项目 workflow skills 默认手动调用
+- 技能按职能分两类：
+  - **创作型 skill**（`write-chapter` / `edit-chapter` / `review-*` 等）：涉及正文产出的任务必须走对应 skill 流程，不得自行直接写正文。创作型 skill 均标注 `disable-model-invocation: true`，需通过 `/skill-name` 手动调用。
+  - **语料型 skill**（`wenyan-writing`）：提供文言词汇、句法、文论参考，不涉及创作流程，可按需自动加载。
+- **短篇练习、文风试笔等同属正文产出，适用 `write-chapter` 流程。**
 - `.claude/settings.local.json` 在本仓库中被版本控制，这是项目特例，不代表 Claude Code 官方默认推荐方式
 
 ---
@@ -36,7 +39,7 @@
 1. 用 `/daily-start` 恢复上下文与当前状态
 2. 先读对应目录的 `INDEX.md`，再进入具体资料
 3. 需要规划时使用 `design-*` / `create-character`
-4. 需要创作或修订时使用 `write-chapter` / `edit-chapter`
+4. 需要创作正文（含章节正文、短篇练习、文风试笔）时使用 `write-chapter`，修订时使用 `edit-chapter`
 5. 需要审查时使用 `review-*` / `check-consistency`
 6. 会话结束前用 `/end-session` 收束记录
 

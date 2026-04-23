@@ -5,8 +5,7 @@
       "mcp__dashscope-websearch__bailian_web_search",
       "mcp__neo4j-cypher__get_neo4j_schema",
       "mcp__neo4j-cypher__read_neo4j_cypher",
-      "mcp__neo4j-cypher__write_neo4j_cypher",
-      "Bash(chmod 600:*)"
+      "mcp__neo4j-cypher__write_neo4j_cypher"
     ]
   },
   "hooks": {
@@ -16,7 +15,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/guard-sensitive.sh\"",
+            "command": "powershell -ExecutionPolicy Bypass -File \"$env:CLAUDE_PROJECT_DIR/.claude/hooks/Guard-Sensitive.ps1\"",
             "timeout": 3
           }
         ]
@@ -28,12 +27,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/log-change.sh\"",
+            "command": "powershell -ExecutionPolicy Bypass -File \"$env:CLAUDE_PROJECT_DIR/.claude/hooks/Log-Change.ps1\"",
             "timeout": 5
           },
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/word-count-check.sh\"",
+            "command": "powershell -ExecutionPolicy Bypass -File \"$env:CLAUDE_PROJECT_DIR/.claude/hooks/Word-Count-Check.ps1\"",
             "timeout": 5
           }
         ]
